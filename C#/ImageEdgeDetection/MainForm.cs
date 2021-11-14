@@ -108,6 +108,7 @@ namespace ImageEdgeDetection
                 if (cmbEdgeDetection.SelectedItem.ToString() == "None")
                 {
                     bitmapResult = selectedSource;
+                    filterButtonEnabled = true;
                 }
                 else if (cmbEdgeDetection.SelectedItem.ToString() == "Laplacian 3x3")
                 {
@@ -177,6 +178,8 @@ namespace ImageEdgeDetection
                 {
                     bitmapResult = selectedSource.KirschFilter();
                 }
+
+                UpdateButtons();
             }
 
             if (bitmapResult != null)
@@ -213,7 +216,6 @@ namespace ImageEdgeDetection
         private void ButtonFilterBlackAndWhite(object sender, EventArgs e)
         {
             Bitmap edited = Filters.BlackWhite(originalBitmap);
-
             UpdateResult(edited);
         }
 
@@ -224,7 +226,7 @@ namespace ImageEdgeDetection
             buttonFilter3.Enabled = filterButtonEnabled;
         }
 
-        //Update state of the selected image filter (Rainbow or B&W)
+        //Mise à jour selon  le filtre choisi
         private void UpdateResult(Bitmap result)
         {
             picPreview.Image = result;

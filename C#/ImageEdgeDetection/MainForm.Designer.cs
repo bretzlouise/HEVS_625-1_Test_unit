@@ -32,6 +32,9 @@
             this.btnOpenOriginal = new System.Windows.Forms.Button();
             this.btnSaveNewImage = new System.Windows.Forms.Button();
             this.cmbEdgeDetection = new System.Windows.Forms.ComboBox();
+            this.buttonFilter1 = new System.Windows.Forms.Button();
+            this.buttonFilter2 = new System.Windows.Forms.Button();
+            this.buttonFilter3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picPreview)).BeginInit();
             this.SuspendLayout();
             // 
@@ -41,9 +44,9 @@
             this.picPreview.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.picPreview.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picPreview.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.picPreview.Location = new System.Drawing.Point(12, 12);
+            this.picPreview.Location = new System.Drawing.Point(12, 81);
             this.picPreview.Name = "picPreview";
-            this.picPreview.Size = new System.Drawing.Size(600, 600);
+            this.picPreview.Size = new System.Drawing.Size(998, 432);
             this.picPreview.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picPreview.TabIndex = 13;
             this.picPreview.TabStop = false;
@@ -51,22 +54,22 @@
             // btnOpenOriginal
             // 
             this.btnOpenOriginal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOpenOriginal.Location = new System.Drawing.Point(12, 618);
+            this.btnOpenOriginal.Location = new System.Drawing.Point(12, 12);
             this.btnOpenOriginal.Name = "btnOpenOriginal";
-            this.btnOpenOriginal.Size = new System.Drawing.Size(150, 46);
+            this.btnOpenOriginal.Size = new System.Drawing.Size(239, 46);
             this.btnOpenOriginal.TabIndex = 15;
-            this.btnOpenOriginal.Text = "Load Image";
+            this.btnOpenOriginal.Text = "Upload your image";
             this.btnOpenOriginal.UseVisualStyleBackColor = true;
             this.btnOpenOriginal.Click += new System.EventHandler(this.btnOpenOriginal_Click);
             // 
             // btnSaveNewImage
             // 
             this.btnSaveNewImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveNewImage.Location = new System.Drawing.Point(462, 618);
+            this.btnSaveNewImage.Location = new System.Drawing.Point(780, 569);
             this.btnSaveNewImage.Name = "btnSaveNewImage";
-            this.btnSaveNewImage.Size = new System.Drawing.Size(150, 46);
+            this.btnSaveNewImage.Size = new System.Drawing.Size(214, 46);
             this.btnSaveNewImage.TabIndex = 16;
-            this.btnSaveNewImage.Text = "Save Image";
+            this.btnSaveNewImage.Text = "Save your image";
             this.btnSaveNewImage.UseVisualStyleBackColor = true;
             this.btnSaveNewImage.Click += new System.EventHandler(this.btnSaveNewImage_Click);
             // 
@@ -94,16 +97,52 @@
             "Prewitt Grayscale",
             "Kirsch",
             "Kirsch Grayscale"});
-            this.cmbEdgeDetection.Location = new System.Drawing.Point(168, 627);
+            this.cmbEdgeDetection.Location = new System.Drawing.Point(394, 577);
             this.cmbEdgeDetection.Name = "cmbEdgeDetection";
             this.cmbEdgeDetection.Size = new System.Drawing.Size(288, 32);
             this.cmbEdgeDetection.TabIndex = 20;
             this.cmbEdgeDetection.SelectedIndexChanged += new System.EventHandler(this.NeighbourCountValueChangedEventHandler);
             // 
+            // buttonFilter1
+            // 
+            this.buttonFilter1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonFilter1.Location = new System.Drawing.Point(61, 528);
+            this.buttonFilter1.Name = "buttonFilter1";
+            this.buttonFilter1.Size = new System.Drawing.Size(239, 38);
+            this.buttonFilter1.TabIndex = 21;
+            this.buttonFilter1.Text = "None";
+            this.buttonFilter1.UseVisualStyleBackColor = true;
+            this.buttonFilter1.Click += new System.EventHandler(this.ButtonFilterNone);
+            // 
+            // buttonFilter2
+            // 
+            this.buttonFilter2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonFilter2.Location = new System.Drawing.Point(61, 572);
+            this.buttonFilter2.Name = "buttonFilter2";
+            this.buttonFilter2.Size = new System.Drawing.Size(239, 38);
+            this.buttonFilter2.TabIndex = 22;
+            this.buttonFilter2.Text = "Filter 2";
+            this.buttonFilter2.UseVisualStyleBackColor = true;
+            this.buttonFilter2.Click += new System.EventHandler(this.ButtonFilterRainbow);
+            // 
+            // buttonFilter3
+            // 
+            this.buttonFilter3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonFilter3.Location = new System.Drawing.Point(61, 616);
+            this.buttonFilter3.Name = "buttonFilter3";
+            this.buttonFilter3.Size = new System.Drawing.Size(239, 38);
+            this.buttonFilter3.TabIndex = 23;
+            this.buttonFilter3.Text = "Filter 3";
+            this.buttonFilter3.UseVisualStyleBackColor = true;
+            this.buttonFilter3.Click += new System.EventHandler(this.ButtonFilterBlackAndWhite);
+            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(624, 675);
+            this.ClientSize = new System.Drawing.Size(1022, 675);
+            this.Controls.Add(this.buttonFilter3);
+            this.Controls.Add(this.buttonFilter2);
+            this.Controls.Add(this.buttonFilter1);
             this.Controls.Add(this.cmbEdgeDetection);
             this.Controls.Add(this.btnSaveNewImage);
             this.Controls.Add(this.btnOpenOriginal);
@@ -125,6 +164,11 @@
         private System.Windows.Forms.Button btnOpenOriginal;
         private System.Windows.Forms.Button btnSaveNewImage;
         private System.Windows.Forms.ComboBox cmbEdgeDetection;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button buttonFilter1;
+        private System.Windows.Forms.Button buttonFilter2;
+        private System.Windows.Forms.Button buttonFilter3;
     }
 }
 

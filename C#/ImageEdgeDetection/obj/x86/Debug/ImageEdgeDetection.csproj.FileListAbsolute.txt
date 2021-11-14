@@ -14,3 +14,12 @@ C:\Users\Louise\Downloads\Image Edge Detection\C#\ImageEdgeDetection\obj\x86\Deb
 C:\Users\Louise\Downloads\Image Edge Detection\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.csproj.CoreCompileInputs.cache
 C:\Users\Louise\Downloads\Image Edge Detection\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.exe
 C:\Users\Louise\Downloads\Image Edge Detection\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.pdb
+C:\src\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.exe
+C:\src\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.pdb
+C:\src\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.csproj.AssemblyReference.cache
+C:\src\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.MainForm.resources
+C:\src\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.Properties.Resources.resources
+C:\src\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.csproj.GenerateResource.cache
+C:\src\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.csproj.CoreCompileInputs.cache
+C:\src\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.exe
+C:\src\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.pdb

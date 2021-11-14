@@ -21,11 +21,13 @@ namespace ImageEdgeDetection
         private Bitmap originalBitmap = null;
         private Bitmap previewBitmap = null;
         private Bitmap resultBitmap = null;
-        
+        private Bitmap filterBitmap = null; // ajout au code initial
+        private bool filterButtonEnabled = false;
+
         public MainForm()
         {
             InitializeComponent();
-
+            UpdateButtons(); // mise a jour des buttons 
             cmbEdgeDetection.SelectedIndex = 0;
         }
 
@@ -44,6 +46,8 @@ namespace ImageEdgeDetection
 
                 previewBitmap = originalBitmap.CopyToSquareCanvas(picPreview.Width);
                 picPreview.Image = previewBitmap;
+                resultBitmap = originalBitmap;
+                filterBitmap = originalBitmap;
 
                 ApplyFilter(true);
             }
@@ -94,17 +98,13 @@ namespace ImageEdgeDetection
             Bitmap selectedSource = null;
             Bitmap bitmapResult = null;
 
-            if (preview == true)
-            {
-                selectedSource = previewBitmap;
-            }
-            else
-            {
-                selectedSource = originalBitmap;
-            }
+            //Image Detection filters will be applied to the current state of the image (original, rainbow, B&W)
+            selectedSource = filterBitmap;
 
             if (selectedSource != null)
             {
+                filterButtonEnabled = false;
+
                 if (cmbEdgeDetection.SelectedItem.ToString() == "None")
                 {
                     bitmapResult = selectedSource;
@@ -195,6 +195,40 @@ namespace ImageEdgeDetection
         private void NeighbourCountValueChangedEventHandler(object sender, EventArgs e)
         {
             ApplyFilter(true);
+        }
+
+        private void ButtonFilterNone(object sender, EventArgs e)
+        {
+            UpdateResult(originalBitmap);
+        }
+
+        private void ButtonFilterRainbow(object sender, EventArgs e)
+        {
+            Bitmap edited = Filters.RainbowFilter(originalBitmap);
+
+            UpdateResult(edited);
+        }
+
+        //TODO : ajouter d'autres filtres
+        private void ButtonFilterBlackAndWhite(object sender, EventArgs e)
+        {
+            Bitmap edited = Filters.BlackWhite(originalBitmap);
+
+            UpdateResult(edited);
+        }
+
+        private void UpdateButtons()
+        {
+            buttonFilter1.Enabled = filterButtonEnabled;
+            buttonFilter2.Enabled = filterButtonEnabled;
+            buttonFilter3.Enabled = filterButtonEnabled;
+        }
+
+        //Update state of the selected image filter (Rainbow or B&W)
+        private void UpdateResult(Bitmap result)
+        {
+            picPreview.Image = result;
+            filterBitmap = result;
         }
     }
 }

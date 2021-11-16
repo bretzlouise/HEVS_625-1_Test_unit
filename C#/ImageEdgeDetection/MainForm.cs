@@ -18,11 +18,14 @@ namespace ImageEdgeDetection
 {
     public partial class MainForm : Form
     {
+        private Bitmap edited = null;
         private Bitmap originalBitmap = null;
+        private Bitmap modifiedBitmap = null;
         private Bitmap previewBitmap = null;
         private Bitmap resultBitmap = null;
         private Bitmap filterBitmap = null; // ajout au code initial
         private bool filterButtonEnabled = false;
+        private bool dropListEnabled = false;
 
         public MainForm()
         {
@@ -48,6 +51,7 @@ namespace ImageEdgeDetection
                 picPreview.Image = previewBitmap;
                 resultBitmap = originalBitmap;
                 filterBitmap = originalBitmap;
+                modifiedBitmap = originalBitmap;
 
                 ApplyFilter(true);
             }
@@ -99,7 +103,16 @@ namespace ImageEdgeDetection
             Bitmap bitmapResult = null;
 
             //Image Detection filters will be applied to the current state of the image (original, rainbow, B&W)
-            selectedSource = filterBitmap;
+            //selectedSource = filterBitmap;
+
+            if (preview == true)
+            {
+                selectedSource = (Bitmap)picPreview.Image;
+            }
+            else
+            {
+                selectedSource = originalBitmap;
+            }
 
             if (selectedSource != null)
             {
@@ -107,8 +120,10 @@ namespace ImageEdgeDetection
 
                 if (cmbEdgeDetection.SelectedItem.ToString() == "None")
                 {
-                    bitmapResult = selectedSource;
+                    //bitmapResult = selectedSource;
                     filterButtonEnabled = true;
+                    modifiedBitmap = originalBitmap;
+
                 }
                 else if (cmbEdgeDetection.SelectedItem.ToString() == "Laplacian 3x3")
                 {
@@ -190,7 +205,8 @@ namespace ImageEdgeDetection
                 }
                 else
                 {
-                    resultBitmap = bitmapResult;
+                    //resultBitmap = bitmapResult;
+                    resultBitmap = (Bitmap)picPreview.Image;
                 }
             }
         }
@@ -198,39 +214,46 @@ namespace ImageEdgeDetection
         private void NeighbourCountValueChangedEventHandler(object sender, EventArgs e)
         {
             ApplyFilter(true);
+            
         }
 
-        private void ButtonFilterNone(object sender, EventArgs e)
+        private void FilterButtons(object sender, EventArgs e)
         {
-            UpdateResult(originalBitmap);
+            string button = sender.ToString();
+            string filter1 = "System.Windows.Forms.Button, Text: None";
+            string filter2 = "System.Windows.Forms.Button, Text: Filter 2";
+ 
+            if (button.Equals(filter1)){
+                picPreview.Image = originalBitmap;
+                modifiedBitmap = originalBitmap;
+            }
+            else {
+                if(button.Equals(filter2))
+                {
+                    edited = Filters.RainbowFilter(modifiedBitmap);
+                }
+                else
+                {                  
+                    edited = Filters.ApplyFilterSwap(modifiedBitmap); 
+                }
+                modifiedBitmap = edited;
+                resultBitmap = modifiedBitmap;
+                picPreview.Image = modifiedBitmap;
+                dropListEnabled = true;
+                cmbEdgeDetection.Enabled = dropListEnabled;
+            }       
+
         }
 
-        private void ButtonFilterRainbow(object sender, EventArgs e)
-        {
-            Bitmap edited = Filters.RainbowFilter(originalBitmap);
 
-            UpdateResult(edited);
-        }
-
-        //TODO : ajouter d'autres filtres
-        private void ButtonFilterBlackAndWhite(object sender, EventArgs e)
-        {
-            Bitmap edited = Filters.BlackWhite(originalBitmap);
-            UpdateResult(edited);
-        }
 
         private void UpdateButtons()
         {
             buttonFilter1.Enabled = filterButtonEnabled;
             buttonFilter2.Enabled = filterButtonEnabled;
             buttonFilter3.Enabled = filterButtonEnabled;
+            cmbEdgeDetection.Enabled = dropListEnabled;
         }
 
-        //Mise à jour selon  le filtre choisi
-        private void UpdateResult(Bitmap result)
-        {
-            picPreview.Image = result;
-            filterBitmap = result;
-        }
     }
 }

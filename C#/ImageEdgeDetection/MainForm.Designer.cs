@@ -97,9 +97,9 @@
             "Prewitt Grayscale",
             "Kirsch",
             "Kirsch Grayscale"});
-            this.cmbEdgeDetection.Location = new System.Drawing.Point(394, 577);
+            this.cmbEdgeDetection.Location = new System.Drawing.Point(394, 528);
             this.cmbEdgeDetection.Name = "cmbEdgeDetection";
-            this.cmbEdgeDetection.Size = new System.Drawing.Size(288, 32);
+            this.cmbEdgeDetection.Size = new System.Drawing.Size(288, 37);
             this.cmbEdgeDetection.TabIndex = 20;
             this.cmbEdgeDetection.SelectedIndexChanged += new System.EventHandler(this.NeighbourCountValueChangedEventHandler);
             // 
@@ -112,7 +112,7 @@
             this.buttonFilter1.TabIndex = 21;
             this.buttonFilter1.Text = "None";
             this.buttonFilter1.UseVisualStyleBackColor = true;
-            this.buttonFilter1.Click += new System.EventHandler(this.ButtonFilterNone);
+            this.buttonFilter1.Click += new System.EventHandler(this.FilterButtons);
             // 
             // buttonFilter2
             // 
@@ -123,7 +123,7 @@
             this.buttonFilter2.TabIndex = 22;
             this.buttonFilter2.Text = "Filter 2";
             this.buttonFilter2.UseVisualStyleBackColor = true;
-            this.buttonFilter2.Click += new System.EventHandler(this.ButtonFilterRainbow);
+            this.buttonFilter2.Click += new System.EventHandler(this.FilterButtons);
             // 
             // buttonFilter3
             // 
@@ -134,7 +134,7 @@
             this.buttonFilter3.TabIndex = 23;
             this.buttonFilter3.Text = "Filter 3";
             this.buttonFilter3.UseVisualStyleBackColor = true;
-            this.buttonFilter3.Click += new System.EventHandler(this.ButtonFilterBlackAndWhite);
+            this.buttonFilter3.Click += new System.EventHandler(this.FilterButtons);
             // 
             // MainForm
             // 

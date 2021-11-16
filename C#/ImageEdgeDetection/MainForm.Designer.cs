@@ -121,7 +121,7 @@
             this.buttonFilter2.Name = "buttonFilter2";
             this.buttonFilter2.Size = new System.Drawing.Size(239, 38);
             this.buttonFilter2.TabIndex = 22;
-            this.buttonFilter2.Text = "Filter 2";
+            this.buttonFilter2.Text = "Rainbow";
             this.buttonFilter2.UseVisualStyleBackColor = true;
             this.buttonFilter2.Click += new System.EventHandler(this.FilterButtons);
             // 
@@ -132,7 +132,7 @@
             this.buttonFilter3.Name = "buttonFilter3";
             this.buttonFilter3.Size = new System.Drawing.Size(239, 38);
             this.buttonFilter3.TabIndex = 23;
-            this.buttonFilter3.Text = "Filter 3";
+            this.buttonFilter3.Text = "Swap";
             this.buttonFilter3.UseVisualStyleBackColor = true;
             this.buttonFilter3.Click += new System.EventHandler(this.FilterButtons);
             // 
@@ -164,8 +164,6 @@
         private System.Windows.Forms.Button btnOpenOriginal;
         private System.Windows.Forms.Button btnSaveNewImage;
         private System.Windows.Forms.ComboBox cmbEdgeDetection;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button buttonFilter1;
         private System.Windows.Forms.Button buttonFilter2;
         private System.Windows.Forms.Button buttonFilter3;

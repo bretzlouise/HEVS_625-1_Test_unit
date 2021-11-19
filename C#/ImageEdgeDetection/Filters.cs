@@ -6,7 +6,7 @@ using System.Drawing;
 
 namespace ImageEdgeDetection
 {
-    class Filters
+    public class Filters
     {
         public static Bitmap RainbowFilter(Bitmap bmp)
         {

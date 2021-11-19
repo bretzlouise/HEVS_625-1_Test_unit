@@ -35,7 +35,15 @@
             this.buttonFilter1 = new System.Windows.Forms.Button();
             this.buttonFilter2 = new System.Windows.Forms.Button();
             this.buttonFilter3 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.picPreview)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // picPreview
@@ -44,9 +52,9 @@
             this.picPreview.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.picPreview.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picPreview.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.picPreview.Location = new System.Drawing.Point(12, 81);
+            this.picPreview.Location = new System.Drawing.Point(318, 25);
             this.picPreview.Name = "picPreview";
-            this.picPreview.Size = new System.Drawing.Size(998, 432);
+            this.picPreview.Size = new System.Drawing.Size(692, 589);
             this.picPreview.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picPreview.TabIndex = 13;
             this.picPreview.TabStop = false;
@@ -54,9 +62,9 @@
             // btnOpenOriginal
             // 
             this.btnOpenOriginal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOpenOriginal.Location = new System.Drawing.Point(12, 12);
+            this.btnOpenOriginal.Location = new System.Drawing.Point(24, 31);
             this.btnOpenOriginal.Name = "btnOpenOriginal";
-            this.btnOpenOriginal.Size = new System.Drawing.Size(239, 46);
+            this.btnOpenOriginal.Size = new System.Drawing.Size(227, 39);
             this.btnOpenOriginal.TabIndex = 15;
             this.btnOpenOriginal.Text = "Upload your image";
             this.btnOpenOriginal.UseVisualStyleBackColor = true;
@@ -65,11 +73,11 @@
             // btnSaveNewImage
             // 
             this.btnSaveNewImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveNewImage.Location = new System.Drawing.Point(780, 569);
+            this.btnSaveNewImage.Location = new System.Drawing.Point(24, 32);
             this.btnSaveNewImage.Name = "btnSaveNewImage";
-            this.btnSaveNewImage.Size = new System.Drawing.Size(214, 46);
+            this.btnSaveNewImage.Size = new System.Drawing.Size(227, 39);
             this.btnSaveNewImage.TabIndex = 16;
-            this.btnSaveNewImage.Text = "Save your image";
+            this.btnSaveNewImage.Text = "Save";
             this.btnSaveNewImage.UseVisualStyleBackColor = true;
             this.btnSaveNewImage.Click += new System.EventHandler(this.btnSaveNewImage_Click);
             // 
@@ -97,18 +105,18 @@
             "Prewitt Grayscale",
             "Kirsch",
             "Kirsch Grayscale"});
-            this.cmbEdgeDetection.Location = new System.Drawing.Point(394, 528);
+            this.cmbEdgeDetection.Location = new System.Drawing.Point(24, 37);
             this.cmbEdgeDetection.Name = "cmbEdgeDetection";
-            this.cmbEdgeDetection.Size = new System.Drawing.Size(288, 37);
+            this.cmbEdgeDetection.Size = new System.Drawing.Size(227, 32);
             this.cmbEdgeDetection.TabIndex = 20;
             this.cmbEdgeDetection.SelectedIndexChanged += new System.EventHandler(this.NeighbourCountValueChangedEventHandler);
             // 
             // buttonFilter1
             // 
             this.buttonFilter1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonFilter1.Location = new System.Drawing.Point(61, 528);
+            this.buttonFilter1.Location = new System.Drawing.Point(24, 18);
             this.buttonFilter1.Name = "buttonFilter1";
-            this.buttonFilter1.Size = new System.Drawing.Size(239, 38);
+            this.buttonFilter1.Size = new System.Drawing.Size(227, 38);
             this.buttonFilter1.TabIndex = 21;
             this.buttonFilter1.Text = "None";
             this.buttonFilter1.UseVisualStyleBackColor = true;
@@ -117,9 +125,9 @@
             // buttonFilter2
             // 
             this.buttonFilter2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonFilter2.Location = new System.Drawing.Point(61, 572);
+            this.buttonFilter2.Location = new System.Drawing.Point(24, 62);
             this.buttonFilter2.Name = "buttonFilter2";
-            this.buttonFilter2.Size = new System.Drawing.Size(239, 38);
+            this.buttonFilter2.Size = new System.Drawing.Size(227, 38);
             this.buttonFilter2.TabIndex = 22;
             this.buttonFilter2.Text = "Rainbow";
             this.buttonFilter2.UseVisualStyleBackColor = true;
@@ -128,24 +136,65 @@
             // buttonFilter3
             // 
             this.buttonFilter3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonFilter3.Location = new System.Drawing.Point(61, 616);
+            this.buttonFilter3.Location = new System.Drawing.Point(24, 106);
             this.buttonFilter3.Name = "buttonFilter3";
-            this.buttonFilter3.Size = new System.Drawing.Size(239, 38);
+            this.buttonFilter3.Size = new System.Drawing.Size(227, 38);
             this.buttonFilter3.TabIndex = 23;
             this.buttonFilter3.Text = "Swap";
             this.buttonFilter3.UseVisualStyleBackColor = true;
             this.buttonFilter3.Click += new System.EventHandler(this.FilterButtons);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.buttonFilter3);
+            this.groupBox1.Controls.Add(this.buttonFilter1);
+            this.groupBox1.Controls.Add(this.buttonFilter2);
+            this.groupBox1.Location = new System.Drawing.Point(12, 164);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(278, 161);
+            this.groupBox1.TabIndex = 24;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Step 2 - Choose 0, 1 or 2 filters";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btnOpenOriginal);
+            this.groupBox2.Location = new System.Drawing.Point(12, 25);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(278, 100);
+            this.groupBox2.TabIndex = 25;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Step 1 - Upload .png or .jpeg picture";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.cmbEdgeDetection);
+            this.groupBox3.Location = new System.Drawing.Point(12, 366);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(278, 100);
+            this.groupBox3.TabIndex = 26;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Step 3 - Add edge detection";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.btnSaveNewImage);
+            this.groupBox4.Location = new System.Drawing.Point(12, 514);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(278, 100);
+            this.groupBox4.TabIndex = 27;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Step 4 - Download your picture";
+            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1022, 675);
-            this.Controls.Add(this.buttonFilter3);
-            this.Controls.Add(this.buttonFilter2);
-            this.Controls.Add(this.buttonFilter1);
-            this.Controls.Add(this.cmbEdgeDetection);
-            this.Controls.Add(this.btnSaveNewImage);
-            this.Controls.Add(this.btnOpenOriginal);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.picPreview);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -153,7 +202,12 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Image Edge Detection";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picPreview)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -167,6 +221,10 @@
         private System.Windows.Forms.Button buttonFilter1;
         private System.Windows.Forms.Button buttonFilter2;
         private System.Windows.Forms.Button buttonFilter3;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox4;
     }
 }
 

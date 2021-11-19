@@ -255,5 +255,14 @@ namespace ImageEdgeDetection
             cmbEdgeDetection.Enabled = dropListEnabled;
         }
 
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

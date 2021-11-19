@@ -4,12 +4,7 @@
  * Licensed under Ms-PL 
 */
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using System.Drawing.Imaging;
@@ -23,17 +18,20 @@ namespace ImageEdgeDetection
         private Bitmap modifiedBitmap = null;
         private Bitmap previewBitmap = null;
         private Bitmap resultBitmap = null;
-        private Bitmap filterBitmap = null; // ajout au code initial
+        private Bitmap filterBitmap = null;
         private bool filterButtonEnabled = false;
         private bool dropListEnabled = false;
 
         public MainForm()
         {
             InitializeComponent();
-            UpdateButtons(); // mise a jour des buttons 
+            UpdateButtons(); 
             cmbEdgeDetection.SelectedIndex = 0;
+            btnSaveNewImage.Enabled = false;
         }
 
+
+        //Method to load a new picture
         private void btnOpenOriginal_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
@@ -57,6 +55,7 @@ namespace ImageEdgeDetection
             }
         }
 
+        //Method to save a picture
         private void btnSaveNewImage_Click(object sender, EventArgs e)
         {
             ApplyFilter(false);
@@ -92,6 +91,7 @@ namespace ImageEdgeDetection
             }
         }
 
+        //Method to apply edge detection with a dropdownlist
         private void ApplyFilter(bool preview)
         {
             if (previewBitmap == null || cmbEdgeDetection.SelectedIndex == -1)
@@ -102,8 +102,6 @@ namespace ImageEdgeDetection
             Bitmap selectedSource = null;
             Bitmap bitmapResult = null;
 
-            //Image Detection filters will be applied to the current state of the image (original, rainbow, B&W)
-            //selectedSource = filterBitmap;
 
             if (preview == true)
             {
@@ -120,10 +118,10 @@ namespace ImageEdgeDetection
 
                 if (cmbEdgeDetection.SelectedItem.ToString() == "None")
                 {
-                    //bitmapResult = selectedSource;
                     filterButtonEnabled = true;
+                    dropListEnabled = false;
                     modifiedBitmap = originalBitmap;
-
+                    picPreview.Image = originalBitmap;
                 }
                 else if (cmbEdgeDetection.SelectedItem.ToString() == "Laplacian 3x3")
                 {
@@ -205,23 +203,28 @@ namespace ImageEdgeDetection
                 }
                 else
                 {
-                    //resultBitmap = bitmapResult;
                     resultBitmap = (Bitmap)picPreview.Image;
                 }
             }
         }
 
+
         private void NeighbourCountValueChangedEventHandler(object sender, EventArgs e)
         {
-            ApplyFilter(true);
-            
+            ApplyFilter(true);         
         }
 
+        //Method to choose a filter between none and 2 others (0,1,2)
         private void FilterButtons(object sender, EventArgs e)
         {
+            btnSaveNewImage.Enabled = true;
+
+            dropListEnabled = true;
+            cmbEdgeDetection.Enabled = dropListEnabled;
+
             string button = sender.ToString();
             string filter1 = "System.Windows.Forms.Button, Text: None";
-            string filter2 = "System.Windows.Forms.Button, Text: Filter 2";
+            string filter2 = "System.Windows.Forms.Button, Text: Rainbow";
  
             if (button.Equals(filter1)){
                 picPreview.Image = originalBitmap;
@@ -239,14 +242,11 @@ namespace ImageEdgeDetection
                 modifiedBitmap = edited;
                 resultBitmap = modifiedBitmap;
                 picPreview.Image = modifiedBitmap;
-                dropListEnabled = true;
-                cmbEdgeDetection.Enabled = dropListEnabled;
             }       
 
         }
 
-
-
+        //Method to enable the buttons and dropdownlist
         private void UpdateButtons()
         {
             buttonFilter1.Enabled = filterButtonEnabled;
@@ -255,5 +255,14 @@ namespace ImageEdgeDetection
             cmbEdgeDetection.Enabled = dropListEnabled;
         }
 
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

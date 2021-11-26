@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "M/13+ifYpl6nzbWOu8iUBCzY9msdDNkh/GBBgOaL9p2wed3lGHnOF1N7UYdlNi31PH81J7kj2g/GGRYuMc/VWg==",
+  "dgSpecHash": "pzk3ljwLiqJh/vhYo72sXfBjU6PE4y/JJPgmlBujvbbA/sCv0ZJmcVeGR5NYa97wVWTI/MJHKEb5v6X5iBu+5A==",
   "success": true,
   "projectFilePath": "C:\\src\\HEVS_625-1_Test_unit\\C#\\TestImageEdgeDetection\\TestImageEdgeDetection.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,7 @@
     "C:\\Users\\Louise\\.nuget\\packages\\microsoft.testplatform.objectmodel\\16.9.4\\microsoft.testplatform.objectmodel.16.9.4.nupkg.sha512",
     "C:\\Users\\Louise\\.nuget\\packages\\microsoft.testplatform.testhost\\16.9.4\\microsoft.testplatform.testhost.16.9.4.nupkg.sha512",
     "C:\\Users\\Louise\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\Louise\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\Louise\\.nuget\\packages\\mstest.testadapter\\2.2.3\\mstest.testadapter.2.2.3.nupkg.sha512",
     "C:\\Users\\Louise\\.nuget\\packages\\mstest.testframework\\2.2.3\\mstest.testframework.2.2.3.nupkg.sha512",
     "C:\\Users\\Louise\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
@@ -45,6 +46,7 @@
     "C:\\Users\\Louise\\.nuget\\packages\\system.diagnostics.tools\\4.3.0\\system.diagnostics.tools.4.3.0.nupkg.sha512",
     "C:\\Users\\Louise\\.nuget\\packages\\system.diagnostics.tracesource\\4.3.0\\system.diagnostics.tracesource.4.3.0.nupkg.sha512",
     "C:\\Users\\Louise\\.nuget\\packages\\system.diagnostics.tracing\\4.3.0\\system.diagnostics.tracing.4.3.0.nupkg.sha512",
+    "C:\\Users\\Louise\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
     "C:\\Users\\Louise\\.nuget\\packages\\system.dynamic.runtime\\4.0.11\\system.dynamic.runtime.4.0.11.nupkg.sha512",
     "C:\\Users\\Louise\\.nuget\\packages\\system.globalization\\4.3.0\\system.globalization.4.3.0.nupkg.sha512",
     "C:\\Users\\Louise\\.nuget\\packages\\system.globalization.calendars\\4.3.0\\system.globalization.calendars.4.3.0.nupkg.sha512",

@@ -1,38 +1,38 @@
 {
   "format": 1,
   "restore": {
-    "C:\\src\\HEVS_625-1_Test_unit\\C#\\TestImageEdgeDetection\\TestImageEdgeDetection.csproj": {}
+    "C:\\Users\\luyet\\Source\\Repos\\HEVS_625-1_Test_unit\\C#\\TestImageEdgeDetection\\TestImageEdgeDetection.csproj": {}
   },
   "projects": {
-    "C:\\src\\HEVS_625-1_Test_unit\\C#\\ImageEdgeDetection\\ImageEdgeDetection.csproj": {
+    "C:\\Users\\luyet\\Source\\Repos\\HEVS_625-1_Test_unit\\C#\\ImageEdgeDetection\\ImageEdgeDetection.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\src\\HEVS_625-1_Test_unit\\C#\\ImageEdgeDetection\\ImageEdgeDetection.csproj",
+        "projectUniqueName": "C:\\Users\\luyet\\Source\\Repos\\HEVS_625-1_Test_unit\\C#\\ImageEdgeDetection\\ImageEdgeDetection.csproj",
         "projectName": "ImageEdgeDetection",
-        "projectPath": "C:\\src\\HEVS_625-1_Test_unit\\C#\\ImageEdgeDetection\\ImageEdgeDetection.csproj",
+        "projectPath": "C:\\Users\\luyet\\Source\\Repos\\HEVS_625-1_Test_unit\\C#\\ImageEdgeDetection\\ImageEdgeDetection.csproj",
         "frameworks": {
-          "net40-client": {
+          "net461": {
             "projectReferences": {}
           }
         }
       },
       "frameworks": {
-        "net40-client": {}
+        "net461": {}
       }
     },
-    "C:\\src\\HEVS_625-1_Test_unit\\C#\\TestImageEdgeDetection\\TestImageEdgeDetection.csproj": {
+    "C:\\Users\\luyet\\Source\\Repos\\HEVS_625-1_Test_unit\\C#\\TestImageEdgeDetection\\TestImageEdgeDetection.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\src\\HEVS_625-1_Test_unit\\C#\\TestImageEdgeDetection\\TestImageEdgeDetection.csproj",
+        "projectUniqueName": "C:\\Users\\luyet\\Source\\Repos\\HEVS_625-1_Test_unit\\C#\\TestImageEdgeDetection\\TestImageEdgeDetection.csproj",
         "projectName": "TestImageEdgeDetection",
-        "projectPath": "C:\\src\\HEVS_625-1_Test_unit\\C#\\TestImageEdgeDetection\\TestImageEdgeDetection.csproj",
-        "packagesPath": "C:\\Users\\Louise\\.nuget\\packages\\",
-        "outputPath": "C:\\src\\HEVS_625-1_Test_unit\\C#\\TestImageEdgeDetection\\obj\\",
+        "projectPath": "C:\\Users\\luyet\\Source\\Repos\\HEVS_625-1_Test_unit\\C#\\TestImageEdgeDetection\\TestImageEdgeDetection.csproj",
+        "packagesPath": "C:\\Users\\luyet\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\luyet\\Source\\Repos\\HEVS_625-1_Test_unit\\C#\\TestImageEdgeDetection\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Louise\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\luyet\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -47,8 +47,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\src\\HEVS_625-1_Test_unit\\C#\\ImageEdgeDetection\\ImageEdgeDetection.csproj": {
-                "projectPath": "C:\\src\\HEVS_625-1_Test_unit\\C#\\ImageEdgeDetection\\ImageEdgeDetection.csproj"
+              "C:\\Users\\luyet\\Source\\Repos\\HEVS_625-1_Test_unit\\C#\\ImageEdgeDetection\\ImageEdgeDetection.csproj": {
+                "projectPath": "C:\\Users\\luyet\\Source\\Repos\\HEVS_625-1_Test_unit\\C#\\ImageEdgeDetection\\ImageEdgeDetection.csproj"
               }
             }
           }
@@ -74,6 +74,14 @@
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.9.4, )"
+            },
+            "NSubstitute": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             },
             "coverlet.collector": {
               "target": "Package",

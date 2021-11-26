@@ -32,3 +32,9 @@ C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\obj\x86\D
 C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.csproj.CoreCompileInputs.cache
 C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.exe
 C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.pdb
+C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.exe.config
+C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\bin\Debug\Microsoft.Data.Tools.Components.dll
+C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\bin\Debug\Microsoft.Data.Tools.Schema.Sql.dll
+C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\bin\Debug\Microsoft.Data.Tools.Utilities.dll
+C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\bin\Debug\Microsoft.SqlServer.TransactSql.ScriptDom.dll
+C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.csproj.CopyComplete

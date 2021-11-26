@@ -8,11 +8,13 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.IO;
 using System.Drawing.Imaging;
+using System.ComponentModel;
 
 namespace ImageEdgeDetection
 {
     public partial class MainForm : Form
     {
+
         private Bitmap edited = null;
         private Bitmap originalBitmap = null;
         private Bitmap modifiedBitmap = null;
@@ -231,13 +233,18 @@ namespace ImageEdgeDetection
                 modifiedBitmap = originalBitmap;
             }
             else {
-                if(button.Equals(filter2))
+
+                //var mf = new Filters();
+                var mf = new ImageFilters();
+
+                if (button.Equals(filter2))
                 {
-                    edited = Filters.RainbowFilter(modifiedBitmap);
+                    edited = mf.RainbowFilter(modifiedBitmap);
                 }
                 else
-                {                  
-                    edited = Filters.ApplyFilterSwap(modifiedBitmap); 
+                {
+                    //edited = mf.ApplyFilterSwap(modifiedBitmap); 
+                    edited = mf.SwapFilter(modifiedBitmap);
                 }
                 modifiedBitmap = edited;
                 resultBitmap = modifiedBitmap;
@@ -264,5 +271,19 @@ namespace ImageEdgeDetection
         {
 
         }
+
+
+        ////Give the filter to the worker
+        //private void BgworkerDoWork(object sender, DoWorkEventArgs e)
+        //{
+        //    rw.DoBgWorker(sender, e, picPreview);
+
+        //}
+
+        ////when the worker work, the progress bar is updated
+        //private void BgWorkerProgress(object sender, ProgressChangedEventArgs e)
+        //{
+        //    p.BgWorkerProg(sender, e, pbtsTraitementPrct, lbltsPrct);
+        //}
     }
 }

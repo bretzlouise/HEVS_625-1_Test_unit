@@ -108,13 +108,13 @@ C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\obj\D
 C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\obj\Debug\netcoreapp3.1\TestImageEdgeDetection.dll
 C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\obj\Debug\netcoreapp3.1\TestImageEdgeDetection.pdb
 C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\obj\Debug\netcoreapp3.1\TestImageEdgeDetection.genruntimeconfig.cache
-C:\src\Cours\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\bin\Debug\netcoreapp3.1\testhost.exe
 C:\src\Cours\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\bin\Debug\netcoreapp3.1\testhost.dll
+C:\src\Cours\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\bin\Debug\netcoreapp3.1\testhost.exe
+C:\src\Cours\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.PlatformAbstractions.dll
 C:\src\Cours\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 C:\src\Cours\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 C:\src\Cours\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
 C:\src\Cours\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.AdapterUtilities.dll
-C:\src\Cours\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.PlatformAbstractions.dll
 C:\src\Cours\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\bin\Debug\netcoreapp3.1\TestImageEdgeDetection.deps.json
 C:\src\Cours\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\bin\Debug\netcoreapp3.1\TestImageEdgeDetection.runtimeconfig.json
 C:\src\Cours\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\bin\Debug\netcoreapp3.1\TestImageEdgeDetection.runtimeconfig.dev.json

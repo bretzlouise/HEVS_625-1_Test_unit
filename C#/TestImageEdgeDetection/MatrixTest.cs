@@ -7,6 +7,7 @@ using System.IO;
 using NSubstitute;
 using System;
 using System.Collections.Generic;
+using System.Drawing.Imaging;
 
 namespace TestImageEdgeDetection
 {
@@ -14,48 +15,120 @@ namespace TestImageEdgeDetection
     public class MatrixTest
     {
 
-        public Bitmap originalPictureOpenSuse;
-        public Bitmap originalPictureForest;
-        public Bitmap rainbowedPicture;
-        public Bitmap swapedPicture;
-        public Bitmap result;
-        public List<Bitmap> pictureList = new List<Bitmap>(); 
-        public IImageFilters imageFilters = new ImageFilters();
-        public string resultImageHash;
-        public string realResultImageHash;
+        [TestMethod]
+        public void Sobel3x3EdgeDetectionTest()
+        {
+            //Arrange
+            Bitmap initialPicture = new Bitmap(Properties.Resources.test);
+            string resultPictureAfterFilter_ref;
+            string resultSavedBitmap_ref;
 
+            //Act
+            Bitmap resultPictureAfterFilter = initialPicture.Sobel3x3Filter(false);
+            Bitmap resultSavedBitmap = new Bitmap(Properties.Resources.testSobel3x3);
+
+            //Assert
+            if (resultPictureAfterFilter.Width == resultSavedBitmap.Width && resultPictureAfterFilter.Height == resultSavedBitmap.Height)
+            {
+                for (int i = 0; i < resultPictureAfterFilter.Width; i++)
+                {
+                    for (int j = 0; j < resultPictureAfterFilter.Height; j++)
+                    {
+                        resultPictureAfterFilter_ref = resultPictureAfterFilter.GetPixel(i, j).ToString();
+                        resultSavedBitmap_ref = resultSavedBitmap.GetPixel(i, j).ToString();
+
+                        Assert.AreEqual(resultPictureAfterFilter_ref, resultSavedBitmap_ref);
+                    }
+                }
+            }
+        }
 
 
         [TestMethod]
         public void KirschEdgeDetectionTest()
         {
-            //Image in color
-            Bitmap original;
-            Bitmap original2 = new Bitmap(Properties.Resources.forest);
-            Bitmap effectue = new Bitmap(Properties.Resources.openSuseRainbow);
+            //Arrange
+            Bitmap initialPicture = new Bitmap(Properties.Resources.test);
+            string resultPictureAfterFilter_ref;
+            string resultSavedBitmap_ref;
 
-            Bitmap result = ExtBitmap.KirschFilter(original2, false);
+            //Act
+            Bitmap resultPictureAfterFilter = initialPicture.KirschFilter(false);
+            Bitmap resultSavedBitmap = new Bitmap(Properties.Resources.testKirsch);
 
-            bool test = true;
-            for (int y = 0; y < result.Height; y++)
-                for (int x = 0; x < result.Width; x++)
+            //Assert
+            if (resultPictureAfterFilter.Width == resultSavedBitmap.Width && resultPictureAfterFilter.Height == resultSavedBitmap.Height)
+            {
+                for (int i = 0; i < resultPictureAfterFilter.Width; i++)
                 {
-                    if (result.GetPixel(x, y) != effectue.GetPixel(x, y))
+                    for (int j = 0; j < resultPictureAfterFilter.Height; j++)
                     {
-                        test = false;
+                        Console.WriteLine("i " + i + " j " + j);
+                        resultPictureAfterFilter_ref = resultPictureAfterFilter.GetPixel(i, j).ToString();
+                        resultSavedBitmap_ref = resultSavedBitmap.GetPixel(i, j).ToString();
+
+                        Assert.AreEqual(resultPictureAfterFilter_ref, resultSavedBitmap_ref);
                     }
                 }
-
-            Assert.IsTrue(test);
+            }
         }
+
         [TestMethod]
-        public void Sobel3x3EdgeDetectionTest()
+        public void TestLaMemeImage()
         {
+            //Arrange
+            Bitmap initialPicture = new Bitmap(Properties.Resources.openSuseKirsch2);
+            string resultPictureAfterFilter_ref;
+            string resultSavedBitmap_ref;
+
+            //Act
+            Bitmap resultPictureAfterFilter = initialPicture;
+            Bitmap resultSavedBitmap = new Bitmap(Properties.Resources.openSuseKirsch);
+
+            //Assert
+            if (resultPictureAfterFilter.Width == resultSavedBitmap.Width && resultPictureAfterFilter.Height == resultSavedBitmap.Height)
+            {
+                for (int i = 0; i < resultPictureAfterFilter.Width; i++)
+                {
+                    for (int j = 0; j < resultPictureAfterFilter.Height; j++)
+                    {
+                        resultPictureAfterFilter_ref = resultPictureAfterFilter.GetPixel(i, j).ToString();
+                        resultSavedBitmap_ref = resultSavedBitmap.GetPixel(i, j).ToString();
+
+                        Assert.AreEqual(resultPictureAfterFilter_ref, resultSavedBitmap_ref);
+                    }
+                }
+            }
         }
 
         [TestMethod]
         public void PrewittEdgeDetectionTest()
         {
+
+            //Arrange
+            Bitmap initialPicture = new Bitmap(Properties.Resources.test);
+            string resultPictureAfterFilter_ref;
+            string resultSavedBitmap_ref;
+
+            //Act
+            Bitmap resultPictureAfterFilter = initialPicture.PrewittFilter(false);
+            Bitmap resultSavedBitmap = new Bitmap(Properties.Resources.testprewitt2);
+
+            //Assert
+            if (resultPictureAfterFilter.Width == resultSavedBitmap.Width && resultPictureAfterFilter.Height == resultSavedBitmap.Height)
+            {
+                for (int i = 0; i < resultPictureAfterFilter.Width; i++)
+                {
+                    for (int j = 0; j < resultPictureAfterFilter.Height; j++)
+                    {
+                        resultPictureAfterFilter_ref = resultPictureAfterFilter.GetPixel(i, j).ToString();
+                        resultSavedBitmap_ref = resultSavedBitmap.GetPixel(i, j).ToString();
+
+                        Assert.AreEqual(resultPictureAfterFilter_ref, resultSavedBitmap_ref);
+                    }
+                }
+            }
         }
+
     }
 }

@@ -91,6 +91,30 @@ namespace TestImageEdgeDetection
         [TestMethod]
         public void KirschEdgeDetectionTest()
         {
+             //Arrange
+            Bitmap initialPicture = new Bitmap(@"..\\..\\Pictures\\pikachu.jpeg");
+            string resultPictureAfterFilter_ref;
+            string resultSavedBitmap_ref;
+
+            //Act
+            Bitmap resultPictureAfterFilter = initialPicture.Laplacian3x3Filter(false);
+            Bitmap resultSavedBitmap = new Bitmap(@"..\\..\\Pictures\\Lapalacian3x3Pikachu.png");
+
+            //Assert
+            if (resultPictureAfterFilter.Width == resultSavedBitmap.Width && resultPictureAfterFilter.Height == resultSavedBitmap.Height)
+            {
+                for (int i = 0; i < resultPictureAfterFilter.Width; i++)
+                {
+                    for (int j = 0; j < resultPictureAfterFilter.Height; j++)
+                    {
+                        resultPictureAfterFilter_ref = resultPictureAfterFilter.GetPixel(i, j).ToString();
+                        resultSavedBitmap_ref = resultSavedBitmap.GetPixel(i, j).ToString();
+
+                        Assert.AreEqual(resultPictureAfterFilter_ref, resultSavedBitmap_ref);
+                    }
+                }
+            }
+
         }
         [TestMethod]
         public void Sobel3x3EdgeDetectionTest()

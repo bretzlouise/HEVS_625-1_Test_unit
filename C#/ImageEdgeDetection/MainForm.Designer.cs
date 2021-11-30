@@ -88,23 +88,9 @@
             this.cmbEdgeDetection.FormattingEnabled = true;
             this.cmbEdgeDetection.Items.AddRange(new object[] {
             "None",
-            "Laplacian 3x3",
-            "Laplacian 3x3 Grayscale",
-            "Laplacian 5x5",
-            "Laplacian 5x5 Grayscale",
-            "Laplacian of Gaussian",
-            "Laplacian 3x3 of Gaussian 3x3",
-            "Laplacian 3x3 of Gaussian 5x5 - 1",
-            "Laplacian 3x3 of Gaussian 5x5 - 2",
-            "Laplacian 5x5 of Gaussian 3x3",
-            "Laplacian 5x5 of Gaussian 5x5 - 1",
-            "Laplacian 5x5 of Gaussian 5x5 - 2",
             "Sobel 3x3",
-            "Sobel 3x3 Grayscale",
             "Prewitt",
-            "Prewitt Grayscale",
-            "Kirsch",
-            "Kirsch Grayscale"});
+            "Kirsch"});
             this.cmbEdgeDetection.Location = new System.Drawing.Point(24, 37);
             this.cmbEdgeDetection.Name = "cmbEdgeDetection";
             this.cmbEdgeDetection.Size = new System.Drawing.Size(227, 32);

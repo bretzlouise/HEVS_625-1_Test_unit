@@ -88,18 +88,6 @@ namespace TestImageEdgeDetection
 
         }
 
-        [TestMethod]
-        public void KirschEdgeDetectionTest()
-        {
-        }
-        [TestMethod]
-        public void Sobel3x3EdgeDetectionTest()
-        {
-        }
 
-        [TestMethod]
-        public void PrewittEdgeDetectionTest()
-        {
-        }
     }
 }

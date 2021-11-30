@@ -1,4 +1,6 @@
 C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\obj\Debug\netcoreapp3.1\TestImageEdgeDetection.csproj.AssemblyReference.cache
+C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\obj\Debug\netcoreapp3.1\TestImageEdgeDetection.Properties.Resources.resources
+C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\obj\Debug\netcoreapp3.1\TestImageEdgeDetection.csproj.GenerateResource.cache
 C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\obj\Debug\netcoreapp3.1\TestImageEdgeDetection.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\obj\Debug\netcoreapp3.1\TestImageEdgeDetection.AssemblyInfoInputs.cache
 C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\obj\Debug\netcoreapp3.1\TestImageEdgeDetection.AssemblyInfo.cs
@@ -30,6 +32,7 @@ C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\bin\D
 C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\bin\Debug\netcoreapp3.1\NSubstitute.dll
 C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
 C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\bin\Debug\netcoreapp3.1\System.Resources.Extensions.dll
 C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\bin\Debug\netcoreapp3.1\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll
 C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\bin\Debug\netcoreapp3.1\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
 C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\bin\Debug\netcoreapp3.1\de\Microsoft.TestPlatform.CoreUtilities.resources.dll
@@ -100,8 +103,8 @@ C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\bin\D
 C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Drawing.Common.dll
 C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\bin\Debug\netcoreapp3.1\ImageEdgeDetection.exe
 C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\bin\Debug\netcoreapp3.1\ImageEdgeDetection.pdb
+C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\bin\Debug\netcoreapp3.1\ImageEdgeDetection.exe.config
 C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\obj\Debug\netcoreapp3.1\TestImageEdgeDetection.csproj.CopyComplete
 C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\obj\Debug\netcoreapp3.1\TestImageEdgeDetection.dll
 C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\obj\Debug\netcoreapp3.1\TestImageEdgeDetection.pdb
 C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\obj\Debug\netcoreapp3.1\TestImageEdgeDetection.genruntimeconfig.cache
-C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\TestImageEdgeDetection\bin\Debug\netcoreapp3.1\ImageEdgeDetection.exe.config

@@ -18,16 +18,6 @@ namespace ImageEdgeDetection
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());
-
-            Console.WriteLine("HELOOOOOOOOO");
-
-            Assembly myAssembly = Assembly.GetExecutingAssembly();
-            Stream myStream = myAssembly.GetManifestResourceStream("TestImageEdgeDetection.assets.openSuse.png");
-
-
-            const string original = @"C:\Users\openSuse.png";
-            //const string original = @"..\\..\\assets\\openSuse.png";
-            Console.WriteLine(File.Exists(original));
         }
     }
 }

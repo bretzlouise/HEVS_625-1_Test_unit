@@ -49,3 +49,16 @@ C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\obj\x86\D
 C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.csproj.CopyComplete
 C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.exe
 C:\Users\luyet\Source\Repos\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.pdb
+C:\temp\test\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.exe.config
+C:\temp\test\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.exe
+C:\temp\test\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.pdb
+C:\temp\test\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\bin\Debug\Microsoft.Data.Tools.Components.dll
+C:\temp\test\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\bin\Debug\fr\Microsoft.Data.Tools.Components.resources.dll
+C:\temp\test\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.csproj.AssemblyReference.cache
+C:\temp\test\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.MainForm.resources
+C:\temp\test\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.Properties.Resources.resources
+C:\temp\test\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.csproj.GenerateResource.cache
+C:\temp\test\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.csproj.CoreCompileInputs.cache
+C:\temp\test\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.csproj.CopyComplete
+C:\temp\test\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.exe
+C:\temp\test\HEVS_625-1_Test_unit\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.pdb

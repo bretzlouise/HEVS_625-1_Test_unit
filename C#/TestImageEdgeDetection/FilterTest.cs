@@ -5,6 +5,7 @@ using System.Collections.Generic;
 
 namespace TestImageEdgeDetection
 {
+    // Class that tests the filter methods 
     [TestClass]
     public class FilterTest
     {
@@ -13,7 +14,6 @@ namespace TestImageEdgeDetection
                         kirschPicture, prewitPicture, sobelPicture, result;
         public List<Bitmap> pictureList = new List<Bitmap>(); 
         public IImageFilters imageFilters = new ImageFilters();
-        public string resultImageHash, realResultImageHash;
 
 
         [TestInitialize]
@@ -27,17 +27,18 @@ namespace TestImageEdgeDetection
             pictureList.Add(originalPictureOpenSuse);
             pictureList.Add(rainbowedPicture);
             pictureList.Add(swapedPicture);
-
         }
 
+        //Test method to check that the initially loaded table is filled in
         [TestMethod]
-        public void pictureListTest()
+        public void PictureListTest()
         {
             Assert.IsNotNull(pictureList);
         }
 
+        //Test method to check that each image in the table has content
         [TestMethod]
-        public void allResourcePictureTest()
+        public void AllResourcePictureTest()
         {
             foreach(Bitmap picture in pictureList)
             {
@@ -46,36 +47,34 @@ namespace TestImageEdgeDetection
             
         }
 
-        [TestMethod]
-        public void NoneFilterTest()
-        {
-            result = originalPictureOpenSuse;
-            resultImageHash = TestMethods.GetImageHash(result);
-            realResultImageHash = TestMethods.GetImageHash(originalPictureOpenSuse);
-
-            Assert.AreEqual(resultImageHash, realResultImageHash);
-
-        }
-
+        //Test method to check that the Rainbow filter works in the same way in the code and in the app result
         [TestMethod]
         public void RainbowFilterTest()
-        {          
-            result = imageFilters.RainbowFilter(originalPictureOpenSuse);
-            resultImageHash = TestMethods.GetImageHash(result);
-            realResultImageHash = TestMethods.GetImageHash(rainbowedPicture);
+        {
+            // Loading images et application of the filter
+            Bitmap resultPictureAfterFilter = imageFilters.RainbowFilter(originalPictureOpenSuse);
+            Bitmap resultSavedBitmap = rainbowedPicture;
 
-            Assert.AreEqual(resultImageHash, realResultImageHash);
+            //Call the comparison method between two bitmaps,
+            //It returns true or false depending on whether the comparison is correct or not
+            bool isSame = TestMethods.CompareImages(resultPictureAfterFilter, resultSavedBitmap);
+
+            Assert.AreEqual(true, isSame);
         }
 
+        //Test method to check that the Swap filter works in the same way in the code and in the app result
         [TestMethod]
         public void SwapFilterTest()
         {
-            result = imageFilters.SwapFilter(originalPictureOpenSuse);
-            resultImageHash = TestMethods.GetImageHash(result);
-            realResultImageHash = TestMethods.GetImageHash(swapedPicture);
+            // Loading images et application of the filter
+            Bitmap resultPictureAfterFilter = imageFilters.SwapFilter(originalPictureOpenSuse);
+            Bitmap resultSavedBitmap = swapedPicture;
 
-            Assert.AreEqual(resultImageHash, realResultImageHash);
+            //Call the comparison method between two bitmaps,
+            //It returns true or false depending on whether the comparison is correct or not
+            bool isSame = TestMethods.CompareImages(resultPictureAfterFilter, resultSavedBitmap);
 
+            Assert.AreEqual(true, isSame);
         }
 
 

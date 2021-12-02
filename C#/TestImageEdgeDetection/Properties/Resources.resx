@@ -139,19 +139,4 @@
   <data name="openSuseSwap" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\openSuseSwap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="test" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\test.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="testKirsch" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\testKirsch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="testPrewitt" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\testPrewitt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="testprewitt2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\testprewitt2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="testSobel3x3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\testSobel3x3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>

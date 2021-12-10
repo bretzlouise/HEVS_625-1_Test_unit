@@ -6767,23 +6767,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Louise\\.nuget\\packages\\": {},
+    "C:\\Users\\albain.dufils\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\temp\\test\\HEVS_625-1_Test_unit\\C#\\TestImageEdgeDetection\\TestImageEdgeDetection.csproj",
+      "projectUniqueName": "Z:\\00_REPOSITORY\\HES\\HEVS_625-1_Test_unit\\C#\\TestImageEdgeDetection\\TestImageEdgeDetection.csproj",
       "projectName": "TestImageEdgeDetection",
-      "projectPath": "C:\\temp\\test\\HEVS_625-1_Test_unit\\C#\\TestImageEdgeDetection\\TestImageEdgeDetection.csproj",
-      "packagesPath": "C:\\Users\\Louise\\.nuget\\packages\\",
-      "outputPath": "C:\\temp\\test\\HEVS_625-1_Test_unit\\C#\\TestImageEdgeDetection\\obj\\",
+      "projectPath": "Z:\\00_REPOSITORY\\HES\\HEVS_625-1_Test_unit\\C#\\TestImageEdgeDetection\\TestImageEdgeDetection.csproj",
+      "packagesPath": "C:\\Users\\albain.dufils\\.nuget\\packages\\",
+      "outputPath": "Z:\\00_REPOSITORY\\HES\\HEVS_625-1_Test_unit\\C#\\TestImageEdgeDetection\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Louise\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\albain.dufils\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6798,8 +6798,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\temp\\test\\HEVS_625-1_Test_unit\\C#\\ImageEdgeDetection\\ImageEdgeDetection.csproj": {
-              "projectPath": "C:\\temp\\test\\HEVS_625-1_Test_unit\\C#\\ImageEdgeDetection\\ImageEdgeDetection.csproj"
+            "Z:\\00_REPOSITORY\\HES\\HEVS_625-1_Test_unit\\C#\\ImageEdgeDetection\\ImageEdgeDetection.csproj": {
+              "projectPath": "Z:\\00_REPOSITORY\\HES\\HEVS_625-1_Test_unit\\C#\\ImageEdgeDetection\\ImageEdgeDetection.csproj"
             }
           }
         }

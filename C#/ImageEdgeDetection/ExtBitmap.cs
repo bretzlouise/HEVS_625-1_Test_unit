@@ -11,14 +11,16 @@ using System.Drawing.Drawing2D;
 
 namespace ImageEdgeDetection
 {
+    // REVIEW: What is the difference between this class and ImageFilter ? 
     public static class ExtBitmap
     {
         public static Bitmap CopyToSquareCanvas(this Bitmap sourceBitmap, int canvasWidthLenght)
         {
+            // REVIEW: This line is not needed. 
             float ratio = 1.0f;
             int maxSide = sourceBitmap.Width > sourceBitmap.Height ?
                           sourceBitmap.Width : sourceBitmap.Height;
-
+            // REVIEW: Instanciate float here. "float ratio = ..."
             ratio = (float)maxSide / (float)canvasWidthLenght;
 
             Bitmap bitmapResult = (sourceBitmap.Width > sourceBitmap.Height ?

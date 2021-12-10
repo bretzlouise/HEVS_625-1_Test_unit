@@ -1,4 +1,5 @@
-﻿using System;
+﻿// REVIEW: Remove unused usings
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Drawing;
@@ -8,7 +9,7 @@ namespace TestImageEdgeDetection
 {
     public static class TestMethods
     {
-
+        // REVIEW: Be careful if the image is in a large resolution (HD, 4K, ...). Test will be very heavy.
         // Method that compares each pixel between two bitmaps 
         public static bool CompareImages(Bitmap a, Bitmap b)
         {

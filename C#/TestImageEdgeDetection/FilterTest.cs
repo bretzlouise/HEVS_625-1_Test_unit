@@ -12,7 +12,9 @@ namespace TestImageEdgeDetection
 
         public Bitmap originalPictureOpenSuse, originalPictureForest, rainbowedPicture, swapedPicture,
                         kirschPicture, prewitPicture, sobelPicture, result;
-        public List<Bitmap> pictureList = new List<Bitmap>(); 
+        public List<Bitmap> pictureList = new List<Bitmap>();
+        // REVIEW: Interface is not necessary when implemented this way.
+        // Better to set an interface that abstract the ApplyFilter method. imageFilter.SetFilter() + imageFilter.ApplyFilter()
         public IImageFilters imageFilters = new ImageFilters();
 
 

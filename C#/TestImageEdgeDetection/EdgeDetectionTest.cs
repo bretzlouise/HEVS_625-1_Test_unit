@@ -1,10 +1,15 @@
+//REVIEW: remove unused usings
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Drawing;
 using ImageEdgeDetection;
 using System.Collections.Generic;
 
-
+/*
+ * REVIEW:
+ * - Test 2 differents image to see with the TestMethods.CompareImages works fine
+ * 
+ */
 namespace TestImageEdgeDetection
 {
     // Class that tests the angle detection methods 

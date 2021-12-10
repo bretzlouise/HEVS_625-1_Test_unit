@@ -10,6 +10,14 @@ using System.IO;
 using System.Drawing.Imaging;
 using System.ComponentModel;
 
+/*
+ * REVIEW: 
+ * In this class, we need to make methods more functionnal, and not dependent of class properties. 
+ * This way, it is easier to test. 
+ * 
+ */
+
+
 namespace ImageEdgeDetection
 {
     public partial class MainForm : Form
@@ -36,6 +44,7 @@ namespace ImageEdgeDetection
         //Method to load a new picture
         private void btnOpenOriginal_Click(object sender, EventArgs e)
         {
+            // REVIEW: Duplicate code btnOpenOriginal_Click & btnSaveNewImage_Click
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Title = "Select an image file.";
             ofd.Filter = "Png Images(*.png)|*.png|Jpeg Images(*.jpg)|*.jpg";
@@ -64,6 +73,7 @@ namespace ImageEdgeDetection
 
             if (resultBitmap != null)
             {
+                // REVIEW: Duplicate code btnOpenOriginal_Click & btnSaveNewImage_Click
                 SaveFileDialog sfd = new SaveFileDialog();
                 sfd.Title = "Specify a file name and file path";
                 sfd.Filter = "Png Images(*.png)|*.png|Jpeg Images(*.jpg)|*.jpg";
@@ -93,6 +103,7 @@ namespace ImageEdgeDetection
             }
         }
 
+        // REVIEW: In this method, prefer a Bitmap return with the filtered image.
         //Method to apply edge detection with a dropdownlist
         private void ApplyFilter(bool preview)
         {
@@ -160,9 +171,10 @@ namespace ImageEdgeDetection
 
         private void NeighbourCountValueChangedEventHandler(object sender, EventArgs e)
         {
-            ApplyFilter(true);         
+            ApplyFilter(true);
         }
 
+        // REVIEW: Prefer a event code by button instead of testing button name. This can cause issue if the button name change
         //Method to choose a filter between none and 2 others (0,1,2)
         private void FilterButtons(object sender, EventArgs e)
         {
@@ -209,17 +221,19 @@ namespace ImageEdgeDetection
             cmbEdgeDetection.Enabled = dropListEnabled;
         }
 
+        // REVIEW: Remove empty functions
         private void groupBox2_Enter(object sender, EventArgs e)
         {
 
         }
 
+        // REVIEW: Remove empty functions
         private void MainForm_Load(object sender, EventArgs e)
         {
 
         }
 
-
+        // REVIEW: Remove comments
         ////Give the filter to the worker
         //private void BgworkerDoWork(object sender, DoWorkEventArgs e)
         //{
